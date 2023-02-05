@@ -19,7 +19,7 @@ export default {
     ]
   },
   router: {
-    base: 'nuxt-order/'
+    base: '/nuxt-order/'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
