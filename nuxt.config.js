@@ -18,6 +18,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  router: {
+    base: 'nuxt-order/'
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
