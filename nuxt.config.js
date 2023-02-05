@@ -19,12 +19,6 @@ export default {
     ]
   },
   target: 'static',
-  build: {
-    extend(config, { isDev }) {
-      if (!isDev) {
-        config.output.publicPath = './static/'
-      }
-  },
   router: {
     mode: 'hash',
     base: '/nuxt-order/'
@@ -54,5 +48,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+    extend(config, { isDev }) {
+      if (!isDev) {
+        config.output.publicPath = './static/'
+      }
   }
 }
