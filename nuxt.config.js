@@ -52,5 +52,6 @@ export default {
       if (!isDev) {
         config.output.publicPath = './static/'
       }
+    }
   }
 }
