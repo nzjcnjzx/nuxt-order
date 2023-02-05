@@ -18,7 +18,15 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  target: 'static',
+  build: {
+    extend(config, { isDev }) {
+      if (!isDev) {
+        config.output.publicPath = './static/'
+      }
+  },
   router: {
+    mode: 'hash',
     base: '/nuxt-order/'
   },
 
