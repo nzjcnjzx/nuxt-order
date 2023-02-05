@@ -18,7 +18,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  target: 'static',
+  // target: 'static',
   router: {
     mode: 'hash',
     base: '/nuxt-order/'
@@ -48,10 +48,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
-    extend(config, { isDev }) {
-      if (!isDev) {
-        config.output.publicPath = './static/'
-      }
-    }
+    // extend(config, { isDev }) {
+    //   if (!isDev) {
+    //     config.output.publicPath = './static/'
+    //   }
+    // }
   }
 }
